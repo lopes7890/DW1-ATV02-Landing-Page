@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 .header {
-    background-color: #FF3F33;
+    background-color: #C21010;
     color: white;
     padding: 20px;
     text-align: center;
@@ -117,15 +117,21 @@ li a:hover {
 }
 
 .cardapio-item {
-    background-color: red;
+    background-color: #E64848;
     padding: 20px;
     border-radius: 15px;
     width: 300px;
     height: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     overflow: hidden;
+    transition: transform 0.5s;
 }
 
+.cardapio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
 .cardapio-item img {
     width: 100%;
     height: 120px;
@@ -145,6 +151,8 @@ li a:hover {
     font-weight: lighter;
     margin-top: 50px;
 }
+
+
 
 .section-sobre {
     padding: 50px;
@@ -185,12 +193,10 @@ li a:hover {
 
 .contato {
     padding: 50px;
-    background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
+    background-color: #E64848;
+    color: white;
     text-align: center;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .contato h2 {
@@ -204,11 +210,8 @@ li a:hover {
     flex-wrap: wrap;
     gap: 30px;
     align-items: center;
-    justify-content: space-between;
-    /* border-color: #ff4d2d;
-    border-width: 5px;
-    border-style: solid; */
-    width: 80%;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .contato-item {
@@ -218,4 +221,17 @@ li a:hover {
     width: 300px;
     height: 200px;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+}
+
+.footer {
+    background-color: #075B5E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    color: white;
+    margin-top: 20px;
+    text-align: center;
 }
