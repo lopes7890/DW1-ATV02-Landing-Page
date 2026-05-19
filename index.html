@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bella Pizza</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-header">
+        <h1 class="nome-pizzaria">Bella Pizza</h1>
+        <nav class="nav-header">
+          <ul class="itens-nav">
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="hero" class="hero">
+      <div class="content-hero">
+        <h2>Bem-vindo à Bella Pizza!</h2>
+        <p>A melhor pizza da cidade, feita com ingredientes frescos e amor.</p>
+        <button type="button" class="btn btn-danger">Peça agora!</button>
+      </div>
+    </section>
+    <main>
+      <section class="section-cardapio">
+        <h2 id="cardapio">Nosso Cardápio</h2>
+        <div class="cardapio-content">
+          <div class="cardapio-itens">
+            <div class="cardapio-item">
+              <h3>Margherita</h3>
+              <img
+                src="https://rossopizza.com.br/salao/wp-content/uploads/2019/09/istock-181175167.jpg"
+                alt=""
+              />
+              <p>Tomate, mussarela, manjericão e azeite de oliva.</p>
+            </div>
+            <div class="cardapio-item">
+              <h3>Calabresa</h3>
+              <img
+                src="https://www.sabornamesa.com.br/media/k2/items/cache/513d7a0ab11e38f7bd117d760146fed3_XL.jpg"
+                alt=""
+              />
+              <p>Calabresa, cebola, azeitonas e queijo mussarela.</p>
+            </div>
+            <div class="cardapio-item">
+              <h3>Frango com Catupiry</h3>
+              <img
+                src="https://swiftbr.vteximg.com.br/arquivos/ids/214216/618062-pizza-de-frango-com-catupiry-seara_rec.jpg?v=639063278128930000"
+                alt=""
+              />
+              <p>Frango desfiado, catupiry, milho e queijo mussarela.</p>
+            </div>
+            <div class="cardapio-item">
+              <h3>Pepperoni</h3>
+              <img
+                src="https://www.seara.com.br/wp-content/uploads/2025/09/pizza-de-pepperoni-caseira-portal-minha-receita.jpg"
+                alt=""
+              />
+              <p>Pepperoni, mussarela e alho.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-sobre">
+        <div class="sobre-content">
+          <div class="sobre-img">
+            <img src="img/bella_pizza.png" alt="" />
+          </div>
+          <div class="sobre-text">
+            <h2>Sobre Nós</h2>
+            <p>
+              Bella Pizza é uma pizzaria tradicional que oferece as melhores
+              pizzas da cidade, <br />
+              feitas com ingredientes frescos e amor. Fundada em 1978 pelo
+              carismático Nonno Giovanni, <br />
+              um imigrante napolitano apaixonado pela culinária de sua terra
+              natal, nosso estabelecimento <br />
+              mantém viva a autêntica tradição italiana em cada fatia.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contato">
+        <h2>Contato</h2>
+        <div class="contato-content">
+          <div class="contato-item">
+            <h3>Endereço</h3>
+            <p>Rua das Pizzas, 123 - Centro, Cidade</p>
+          </div>
+
+          <div class="contato-item">
+            <h3>Telefone</h3>
+            <p>(11) 1234-5678</p>
+          </div>
+
+          <div class="contato-item">
+            <h3>Horário de funcionamento</h3>
+            <p>Segunda a Sexta: 18:00 - 23:00</p>
+            <p>Sábado e Domingo: 19:00 - 00:00</p>
+          </div>
+        </div>
+        <div class="card col-md-6 m-auto">
+          <div class="card-header">
+            <h2>Envie uma mensagem</h2>
+          </div>
+          <div class="card-body">
+            <form action="">
+              <label class="form-label">Nome</label>
+              <input type="text" class="form-control" />
+              <label class="form-label">E-mail</label>
+              <input type="email" class="form-control" />
+              <label class="form-label">Mensagem</label>
+              <textarea class="form-control" rows="4"></textarea>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

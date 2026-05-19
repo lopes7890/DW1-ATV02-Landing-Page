@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.header {
+    background-color: #FF3F33;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;}
+
+.nome-pizzaria {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.nav-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    /* margin-top: -40px;
+    margin-right: 50px; */
+}
+
+.itens-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+li a {
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: white;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('https://revistanove.com.br/wp-content/uploads/2019/07/pizzarias-em-santos-revista-nove-capa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.content-hero {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.content-hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.content-hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.section-cardapio {
+    padding: 50px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardapio-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cardapio-itens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.cardapio-item {
+    background-color: red;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.cardapio-item img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cardapio-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.cardapio-item p {
+    font-size: 16px;
+    color: white;
+    font-weight: lighter;
+    margin-top: 50px;
+}
+
+.section-sobre {
+    padding: 50px;
+    background-color: #075B5E;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-img img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    border-color: #ff4d2d;
+    border-width: 5px;
+    border-style: solid;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.sobre-text h2{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.sobre-text p {
+    font-size: 18px;
+    color: white;
+    font-weight: lighter;
+}
+
+.contato {
+    padding: 50px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contato h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contato-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    /* border-color: #ff4d2d;
+    border-width: 5px;
+    border-style: solid; */
+    width: 80%;
+}
+
+.contato-item {
+    /* background-color: white; */
+    padding: 20px;
+    /* border-radius: 15px; */
+    width: 300px;
+    height: 200px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+}
