@@ -40,7 +40,7 @@
       </div>
     </section>
     <main>
-      <section class="section-cardapio">
+      <section id="cardapio" class="section-cardapio">
         <h2 id="cardapio">Nosso Cardápio</h2>
         <div class="cardapio-content">
           <div class="cardapio-itens">
@@ -80,7 +80,7 @@
         </div>
       </section>
 
-      <section class="section-sobre">
+      <section id="sobre" class="section-sobre">
         <div class="sobre-content">
           <div class="sobre-img">
             <img src="img/bella_pizza.png" alt="" />
@@ -100,7 +100,7 @@
         </div>
       </section>
 
-      <section class="contato">
+      <section id="contato" class="contato">
         <h2>Contato</h2>
         <div class="contato-content">
           <div class="contato-item">
@@ -131,8 +131,22 @@
                 <input type="email" class="form-control" />
                 <label class="form-label">Mensagem</label>
                 <textarea class="form-control" rows="4"></textarea>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="button" class="btn btn-primary m-2" data-bs-toggle="modal" data-bs-target="#ModalForm">Enviar</button>
               </form>
+            </div>
+            <div id="ModalForm" class="modal fade">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                      <h3 class="modal-title">Mensagem enviada com sucesso!</h3>
+                      <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                  </div>
+                  <div class="modal-body">
+                      <p>Agradecemos por entrar em contato conosco. Responderemos o mais breve possível.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                 </div>
             </div>
           </div>
         </div>
@@ -140,8 +154,9 @@
     </main>
     <footer class="footer">
       <div class="footer-content">
-        <p>&copy; 2026 Bella. Todos os direitos reservados.</p>
+        <p>&copy; 2026 Bella Pizza. Todos os direitos reservados.</p>
       </div>
     </footer>
   </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 </html>
