@@ -61,6 +61,13 @@ li a:hover {
     text-decoration: underline;
 }
 
+.alert-promotion {
+    position: fixed;
+    top: 90%;
+    right: 20px;
+    z-index: 1001;
+}
+
 .hero {
     background-image: url('https://revistanove.com.br/wp-content/uploads/2019/07/pizzarias-em-santos-revista-nove-capa.jpg');
     background-size: cover;
